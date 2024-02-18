@@ -14,12 +14,15 @@ const WindowTitlebar = () => {
   }, []);
 
   return (
-    <div data-tauri-drag-region className='flex p-2 justify-between '>
-      <div className='font-bold'></div>
+    <div
+      data-tauri-drag-region
+      className="flex p-2 justify-between h-[32px]"
+    >
+      <div className="font-bold"></div>
 
-      <div className='flex gap-x-2'>
+      <div className="flex gap-x-2">
         <div
-          className='rounded flex justify-center cursor-pointer hover:text-slate-400'
+          className="rounded flex justify-center cursor-pointer hover:text-slate-400"
           onClick={() => {
             appWindow.minimize();
           }}
@@ -27,7 +30,7 @@ const WindowTitlebar = () => {
           <Minimize />
         </div>
         <div
-          className='rounded flex items-center justify-center cursor-pointer hover:text-slate-400'
+          className="rounded flex items-center justify-center cursor-pointer hover:text-slate-400"
           onClick={() => {
             appWindow.toggleMaximize();
           }}
@@ -35,7 +38,7 @@ const WindowTitlebar = () => {
           <Maximize />
         </div>
         <div
-          className='rounded flex items-center justify-center cursor-pointer hover:text-slate-400'
+          className="rounded flex items-center justify-center cursor-pointer hover:text-slate-400"
           onClick={() => {
             appWindow.hide();
           }}

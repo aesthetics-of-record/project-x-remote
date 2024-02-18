@@ -93,11 +93,14 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 800,
+        "height": 850,
         "resizable": true,
         "title": "deskai",
-        "width": 600,
-        "decorations": false
+        "width": 1200,
+        "decorations": false,
+        "minHeight": 600,
+        "minWidth": 950
+  
       }
     ]
   }

@@ -1,10 +1,11 @@
-import { userState } from '@/recoil/store';
 import { supabase } from '@/lib/supabase/db';
 import { useEffect } from 'react';
-import { useRecoilState } from 'recoil';
+import { useAtom } from 'jotai'
+import { userAtom } from '@/lib/jotai/store';
+
 
 const useUserWithRefresh = () => {
-  const [user, setUser] = useRecoilState<any | null>(userState);
+  const [user, setUser] = useAtom(userAtom)
 
   const refreshUser = async () => {
     const {
